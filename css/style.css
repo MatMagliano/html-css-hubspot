@@ -6,34 +6,77 @@
 body {
   font-family: Nunito, sans-serif;
 }
+.gethub {
+  color: #fff;
+  background-color: #fd7b5a;
+  border-radius: 5px;
+  padding: 10px;
+}
 
 /* navbar */
 .all-navbar {
-  width: 85%;
   height: 150px;
-  background-color: red;
-  margin: 0 auto;
+  background-color: #f4f9fd;
 }
+/* top-nav */
 .top-nav {
+  width: 85%;
   height: 75px;
-  background-color: silver;
+  margin: auto;
+  line-height: 75px;
+}
+.top-nav ul li {
+  display: inline;
+}
+.top-nav ul li a {
+  margin-right: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #33475B;
+  text-transform: capitalize;
+}
+.top-nav ul {
+  list-style: none;
 }
 .top-nav::after {
   content: "";
   display: table;
   clear: both;
 }
+/* left-nav */
 .top-nav .left {
   float: left;
   width: 50%;
-  background-color: lightblue;
 }
+.top-nav .left ul li:last-child a{
+  margin-left: 20px;
+  padding-left: 25px;
+  border-left: 2px solid #bbbcbe;
+}
+/* right-nav */
 .top-nav .right {
-  float: left;
+  float: right;
   width: 50%;
-  background-color: lightyellow;
-}
 
+
+}
+.top-nav .right ul {
+  text-align: right;
+}
+.right .fa-search {
+  color: #01b0b1;
+}
+.right .login {
+  color: #fd7b5a;
+  border: 1px solid #fd7b5a;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 15px;
+}
+.right ul li:last-child a {
+  color: #fff;
+}
+/* fine top-nav */
 .bottom-nav {
   height: 75px;
   background-color: lightgreen;
