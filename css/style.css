@@ -14,8 +14,27 @@ body {
   background-color: red;
   margin: 0 auto;
 }
+.top-nav {
+  height: 75px;
+  background-color: silver;
+}
 .top-nav::after {
   content: "";
   display: table;
   clear: both;
+}
+.top-nav .left {
+  float: left;
+  width: 50%;
+  background-color: lightblue;
+}
+.top-nav .right {
+  float: left;
+  width: 50%;
+  background-color: lightyellow;
+}
+
+.bottom-nav {
+  height: 75px;
+  background-color: lightgreen;
 }
