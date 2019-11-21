@@ -118,8 +118,53 @@ ul li a {
 /* fine-navbar */
 
 /* header */
-.all-headar {
+.all-header {
+  position: relative;
   width: 100%;
-  height: 700px;
-  background-color: lightgreen;
+  height: 850px;
+  margin-top: 75px;
+  background-image: url(../img/jumbotron.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-bottom: 2px solid #32495b;
+}
+
+/* top-header */
+.top-header .claim {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 7.5%;
+}
+.top-header .claim h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #33475B;
+}
+.top-header .claim p {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.top-header .claim a {
+  text-decoration: none;
+  padding: 15px 20px;
+  margin-bottom: 50px;
+}
+.top-header .claim .little{
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* bottom-header */
+.bottom-header {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 850px;
+  background-color: #5fe3e2;
+  border-bottom: 2px solid #32495b;
 }
