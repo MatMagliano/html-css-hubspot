@@ -6,6 +6,16 @@
 body {
   font-family: Nunito, sans-serif;
 }
+ul li {
+  display: inline;
+}
+ul li a {
+  margin-right: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #33475B;
+  text-transform: capitalize;
+}
 .gethub {
   color: #fff;
   background-color: #fd7b5a;
@@ -15,26 +25,20 @@ body {
 
 /* navbar */
 .all-navbar {
-  height: 150px;
+  height: 75px;
+  border-bottom: 1px solid #bbbcbe;
   background-color: #f4f9fd;
 }
-/* top-nav */
-.top-nav {
+.top-nav,
+.bottom-nav .container {
   width: 85%;
   height: 75px;
   margin: auto;
   line-height: 75px;
 }
-.top-nav ul li {
-  display: inline;
-}
-.top-nav ul li a {
-  margin-right: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #33475B;
-  text-transform: capitalize;
-}
+
+/* top-nav */
+
 .top-nav ul {
   list-style: none;
 }
@@ -43,6 +47,7 @@ body {
   display: table;
   clear: both;
 }
+
 /* left-nav */
 .top-nav .left {
   float: left;
@@ -53,12 +58,11 @@ body {
   padding-left: 25px;
   border-left: 2px solid #bbbcbe;
 }
+
 /* right-nav */
 .top-nav .right {
   float: right;
   width: 50%;
-
-
 }
 .top-nav .right ul {
   text-align: right;
@@ -73,11 +77,49 @@ body {
   padding: 10px;
   margin: 0 15px;
 }
-.right ul li:last-child a {
+.right .gethub ul li:last-child a {
   color: #fff;
 }
-/* fine top-nav */
+
+/* bottom-nav */
 .bottom-nav {
   height: 75px;
+  background-color: #fff;
+}
+.bottom-nav .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* botton-left */
+.container .left {
+  float: left;
+  width: 50%;
+}
+.container .left a img {
+  width: 130px;
+  margin-top: 20px;
+}
+
+/* botton-right */
+.container .right {
+  float: right;
+  width: 50%;
+}
+.container .right ul {
+  text-align: right;
+}
+.container .right ul li a{
+  margin-left: 20px;
+}
+.container .right ul li a i {
+  padding-left: 7px;
+}
+/* fine-navbar */
+
+/* header */
+.all-headar {
+  width: 100%;
+  height: 700px;
   background-color: lightgreen;
 }
