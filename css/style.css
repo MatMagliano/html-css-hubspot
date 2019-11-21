@@ -1,3 +1,21 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Nunito, sans-serif;
+}
+
+/* navbar */
+.all-navbar {
+  width: 85%;
+  height: 150px;
+  background-color: red;
+  margin: 0 auto;
+}
+.top-nav::after {
+  content: "";
+  display: table;
+  clear: both;
 }
