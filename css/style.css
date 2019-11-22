@@ -135,9 +135,9 @@ p {
 }
 .top-header .claim {
   position: absolute;
-  width: 35%;
+  width: 75%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   margin-left: 12.5%;
 }
 .top-header .claim h1 {
@@ -173,9 +173,10 @@ p {
   height: 1600px;
   background-color: #f4f9fd;
 }
-.cube {
+/* main-cube */
+.cube,
+.free-hub {
   width: 75%;
-  height: 320px;
   margin: 0 auto;
 }
 .cube-image {
@@ -190,4 +191,27 @@ p {
 }
 .cube-image p {
   margin-top: 20px;
+}
+/* main-book */
+.free-hub {
+  margin-top: 40px;
+  height: 320px;
+  background-color: #fff;
+}
+.free-hub::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.book {
+  float: left;
+  width: 40%;
+  height: 100%;
+  background-color: lightyellow;
+}
+.crm {
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: lightblue;
 }
