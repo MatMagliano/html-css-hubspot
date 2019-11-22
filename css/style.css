@@ -16,6 +16,16 @@ ul li a {
   color: #33475B;
   text-transform: capitalize;
 }
+h3 {
+  font-size: 35px;
+  text-transform: capitalize;
+  color: #33475B;
+}
+p {
+  color: #33475B;
+  font-size: 19px;
+  font-weight: lighter;
+}
 .gethub {
   color: #fff;
   background-color: #fd7b5a;
@@ -31,14 +41,13 @@ ul li a {
 }
 .top-nav,
 .bottom-nav .container {
-  width: 85%;
+  width: 75%;
   height: 75px;
   margin: auto;
   line-height: 75px;
 }
 
 /* top-nav */
-
 .top-nav ul {
   list-style: none;
 }
@@ -47,7 +56,6 @@ ul li a {
   display: table;
   clear: both;
 }
-
 /* left-nav */
 .top-nav .left {
   float: left;
@@ -58,7 +66,6 @@ ul li a {
   padding-left: 25px;
   border-left: 2px solid #bbbcbe;
 }
-
 /* right-nav */
 .top-nav .right {
   float: right;
@@ -80,7 +87,6 @@ ul li a {
 .right .gethub ul li:last-child a {
   color: #fff;
 }
-
 /* bottom-nav */
 .bottom-nav {
   height: 75px;
@@ -100,7 +106,6 @@ ul li a {
   width: 130px;
   margin-top: 20px;
 }
-
 /* botton-right */
 .container .right {
   float: right;
@@ -119,24 +124,21 @@ ul li a {
 
 /* header */
 .all-header {
-  position: relative;
-  width: 100%;
-  height: 850px;
   margin-top: 75px;
-  background-image: url(../img/jumbotron.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: right;
-  border-bottom: 2px solid #32495b;
-}
+  position: relative;
+  /* width: 100%; */
 
+}
 /* top-header */
+.top-header img {
+  width: 100%;
+}
 .top-header .claim {
   position: absolute;
   width: 35%;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 7.5%;
+  margin-left: 12.5%;
 }
 .top-header .claim h1 {
   margin-bottom: 30px;
@@ -145,8 +147,6 @@ ul li a {
 }
 .top-header .claim p {
   margin-bottom: 50px;
-  font-size: 20px;
-  font-weight: lighter;
   line-height: 30px;
 }
 .top-header .claim a {
@@ -158,13 +158,36 @@ ul li a {
   font-size: 14px;
   margin-top: 50px;
 }
-
 /* bottom-header */
 .bottom-header {
-  position: absolute;
   width: 100%;
   height: 100px;
-  top: 850px;
   background-color: #5fe3e2;
   border-bottom: 2px solid #32495b;
+}
+/* fine header */
+
+/* main */
+.all-main {
+  width: 100%;
+  height: 1600px;
+  background-color: #f4f9fd;
+}
+.cube {
+  width: 75%;
+  height: 320px;
+  margin: 0 auto;
+}
+.cube-image {
+  text-align: center;
+}
+.cube-image img {
+  margin-top: 40px;
+  width: 350px;
+}
+.cube-image h3 {
+  margin-top: 20px;
+}
+.cube-image p {
+  margin-top: 20px;
 }
