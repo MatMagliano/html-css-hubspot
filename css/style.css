@@ -16,7 +16,9 @@ ul li img  {
 .left ul li,
 .right ul li,
 .crm ul li,
-.marketing ul li {
+.marketing ul li,
+.sales ul li,
+.service ul li {
   display: inline;
 }
 ul li a {
@@ -37,7 +39,8 @@ h4 {
   color: #33475B;
 }
 h6 {
-  font-size: 18px;
+  margin-bottom: 30px;
+  font-size: 16px;
   text-transform: uppercase;
   color: #33475B;
 }
@@ -215,6 +218,7 @@ p {
 /* main fre-hub */
 .free-hub {
   background-color: #fff;
+  border-radius: 5px;
   box-shadow: 1px 1px 10px 2px #ecf2f1;
 }
 .free-hub::after {
@@ -274,8 +278,7 @@ p {
 }
 /* three-blocs */
 .three-blocks {
-  height: 300px;
-  background-color: lightgreen;
+
 }
 .three-blocks::after {
   content: "";
@@ -285,25 +288,61 @@ p {
 .block {
   float: left;
   width: 28%;
-  height: 600px;
-  background-color: lightyellow;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 2px #ecf2f1;
 }
 /* block-marketing */
-.marketing {
+.marketing,
+.sales,
+.service {
   text-align: center;
 }
-.marketing p {
-  text-align: left;
-  border-bottom: 1px solid #adafb0;
+.book-mark {
+  width: 165px;
+  margin: 30px 0;
 }
-.marketing ul {
-  text-align: left;
+.marketing h4,
+.sales h4,
+.service h4 {
+  margin-bottom: 30px;
 }
-
-
-
+.marketing p,
+.sales p,
+.service p {
+  margin-bottom: 30px;
+  padding-bottom: 70px;
+  font-size: 15px;
+  font-weight: lighter;
+  border-bottom: 0.7px solid #adafb0;
+}
+.marketing ul,
+.sales ul,
+.service ul {
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: lighter;
+  margin: 10px 10px;
+  color: #33475B;
+}
+.book-learn {
+  margin: 40px;
+}
+/* block-sales */
 .sales {
   margin: 0 8%;
+}
+.sales-mark {
+  width: 155px;
+  margin: 30px
+
+  ;
+}
+/* block-service */
+.service-mark {
+  width: 145px;
+  margin: 30px
 }
 /* .gradient-tab {
   height: 300px;
