@@ -6,9 +6,17 @@
 body {
   font-family: Nunito, sans-serif;
 }
+ul {
+  list-style: none;
+  color: #33475B;
+}
+ul li img  {
+  width: 13px;
+}
 .left ul li,
 .right ul li,
-.crm ul li {
+.crm ul li,
+.marketing ul li {
   display: inline;
 }
 ul li a {
@@ -60,9 +68,6 @@ p {
 }
 
 /* top-nav */
-.top-nav ul {
-  list-style: none;
-}
 .top-nav::after {
   content: "";
   display: table;
@@ -187,9 +192,12 @@ p {
 }
 /* main-cube */
 .cube,
-.free-hub {
+.free-hub,
+.three-blocks,
+.gradient-tab {
   width: 75%;
   margin: auto;
+  margin-top: 40px;
 }
 .cube-image {
   text-align: center;
@@ -206,9 +214,8 @@ p {
 }
 /* main fre-hub */
 .free-hub {
-  margin-top: 40px;
-  height: 320px;
   background-color: #fff;
+  box-shadow: 1px 1px 10px 2px #ecf2f1;
 }
 .free-hub::after {
   content: "";
@@ -221,12 +228,13 @@ p {
   margin-top: 0;
   width: 40%;
 }
-.free-hub .book {
+.book {
   text-align: center;
+  height: 320px;
 }
-.free-hub .book img {
-  width: 160px;
-  margin: 40px;
+.book img {
+  width: 170px;
+  margin: 30px;
 }
 .book-learn a {
   padding: 20px 30px;
@@ -258,14 +266,46 @@ p {
   bottom: 10px;
   border-bottom: 1px solid #adafb0;
 }
-.crm ul {
-  color: #33475B;
-}
-.crm ul li img  {
-  width: 13px;
-}
+
+
 .crm ul li {
   margin-right: 20px;
   text-transform: capitalize;
 }
 /* three-blocs */
+.three-blocks {
+  height: 300px;
+  background-color: lightgreen;
+}
+.three-blocks::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.block {
+  float: left;
+  width: 28%;
+  height: 600px;
+  background-color: lightyellow;
+}
+/* block-marketing */
+.marketing {
+  text-align: center;
+}
+.marketing p {
+  text-align: left;
+  border-bottom: 1px solid #adafb0;
+}
+.marketing ul {
+  text-align: left;
+}
+
+
+
+.sales {
+  margin: 0 8%;
+}
+/* .gradient-tab {
+  height: 300px;
+  background-color: lightgreen;
+} */
