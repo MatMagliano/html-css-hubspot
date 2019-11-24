@@ -66,6 +66,21 @@ p {
   padding: 10px;
 }
 
+/* all ::after */
+.top-nav::after,
+.bottom-nav .container::after,
+.free-hub,
+.three-blocks,
+.tab-top,
+.tab-bottom,
+.partners,
+.happy-girl,
+.top-footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* navbar */
 .all-navbar {
   height: 75px;
@@ -79,13 +94,8 @@ p {
   margin: auto;
   line-height: 75px;
 }
-
 /* top-nav */
-.top-nav::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 /* left-nav */
 .top-nav .left {
   float: left;
@@ -121,11 +131,6 @@ p {
 .bottom-nav {
   height: 75px;
   background-color: #fff;
-}
-.bottom-nav .container::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* botton-left */
 .container .left {
@@ -197,20 +202,22 @@ p {
 }
 /* fine header */
 
-/* main */
-.all-main {
-  width: 100%;
-}
+/*general main&footer */
 .cube,
 .free-hub,
 .three-blocks,
 .gradient-tab,
 .partners,
-.happy-girl {
+.happy-girl,
+.top-footer,
+.center-footer,
+.bottom-footer{
   width: 75%;
   margin: auto;
   margin-bottom: 50px;
 }
+
+/* main */
 
 /* main-cube */
 .cube-image {
@@ -231,11 +238,6 @@ p {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 1px 1px 10px 2px #ecf2f1;
-}
-.free-hub::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /*fre-hub book */
 .book {
@@ -286,11 +288,6 @@ p {
   text-transform: capitalize;
 }
 /* three-blocs */
-.three-blocks::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .block {
   float: left;
   width: 28%;
@@ -388,12 +385,6 @@ p {
   margin: auto;
   height: 250px;
 }
-.tab-top,
-.tab-bottom::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .top-col,
 .bottom-col {
   float: left;
@@ -418,11 +409,6 @@ p {
 }
 
 /* <!-- block-partners --> */
-.partners::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .vantiamoci {
   position: relative;
   float: left;
@@ -479,11 +465,6 @@ p {
 }
 
 /* happy-girl */
-.happy-girl::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .girl-button {
   float: left;
   width: 40%;
@@ -512,3 +493,18 @@ p {
 /* fine main */
 
 /* footer */
+.all-footer {
+  width: 100%;
+  height: 900px;
+  background-color: #344b5b;
+}
+.top-footer {
+  height: 500px;
+  background-color: lightblue;
+}
+.top-left {
+  float: left;
+  width: 25%;
+  height: 100%;
+  background-color: #6a76d6;
+}
